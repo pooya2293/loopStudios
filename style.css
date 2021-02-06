@@ -49,7 +49,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: "Alata", sans-serif;
+  font-family: "yekan","Alata", sans-serif;
   font-size: 1.5rem;
   line-height: 1.9;
   color: #8c8c8c; }
@@ -69,9 +69,10 @@ body {
 # Typography
 -----------------------------------------*/
 .heading {
-  font-family: "Josefin Sans", sans-serif;
+  font-family:  "yekan","Josefin Sans", sans-serif;
   text-transform: uppercase;
   direction: rtl;
+  text-align: center;
   font-weight: 200;
   line-height: 1; }
   .heading--primary {
@@ -273,7 +274,7 @@ body {
   .nav__list--hamburger {
     flex-direction: column;
     text-transform: uppercase;
-    font-family: "Josefin Sans", sans-serif;
+    font-family: "yekan","Josefin Sans", sans-serif;
     font-size: clamp(1.5rem, 5vw, 3rem); } }
 
 @media only screen and (max-width: 56.25em) and (max-width: 35em) {
