@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- icon window -->
-	<link rel="icon" type="image/png" sizes="32x32" href="../desafio-loopstudios/images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 	<!-- link font -->
 	<link rel="stylesheet" href="http://cdn.font-store.ir/yekan.css">
 
@@ -15,14 +15,42 @@
 	<link rel="stylesheet" href="style.css">
 	<title>loopStudios</title>
 	<!-- dist script of npm file -->
-
+	<script src="main.js" async></script>
 	<!-- temprorry liveReload -->
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 <!-- container -->
-<body>
-	<!-- hedear -->
+<body class="container">
+	<!-- hedear  i cant see whats in header-->
+	<header class="header">
+		<div class="logo logo--primary">
+			<img src="./images/logo.svg" alt="logo" class="logo__img">
+		</div>
+		<div class="nav">
+			<input type="checkbox" class="nav__checkbox" id="nav-toggle">
+			<label for="nav-toggle" class="nav__btn">
+				<span class="nav__icon"></span>
+			</label>
 
+			<!-- nav tag -->
+			<nav class="nav__nav">
+				<ul class="nav__list nav__list--hamburger">
+					<li class="nav__item nav__item--hamburger"><a href="#" class="nav__link">خانه</a></li>
+					<li class="nav__item nav__item--hamburger"><a href="#" class="nav__link">درباره ما</a></li>
+					<li class="nav__item nav__item--hamburger"><a href="#" class="nav__link">ثبت نام</a></li>
+					<li class="nav__item nav__item--hamburger"><a href="#" class="nav__link">ورود</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="hero__bg">&nbsp;</div>
+	<div class="hero__contain">
+		<div class="hero__content">
+			<h1 class="heading heading--primary">
+				با ما بهترین ها را تجربه کنید 
+			</h1>
+		</div>
+	</div>
 	<!-- logo -->
 	<!-- nav -->
 	<!--hero_bg -->
