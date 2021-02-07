@@ -123,14 +123,19 @@ body {
 }
 
 .hero__content {
-  border: 3.5px solid #ffff;
-  width: 41vw;
+  border: 3.6px solid #ffff;
+  width: 45vw;
   height: auto;
   padding: 3rem 3.7rem;
   -webkit-animation: bottom 1.2s ease-in;
           animation: bottom 1.2s ease-in; 
       }
   @media only screen and (max-width: 63.75em) {
+  	.hero__contain {
+  grid-column: center-start / center-end;
+
+}
+
     .hero__content {
     	width: 90vw;
       /*width: -webkit-min-content;*/
@@ -207,6 +212,7 @@ body {
   display: none; }
 
 .nav__list {
+	font-size: 2rem;
   /*float: right;*/
   /*text-align: right;*/
   direction: rtl;
@@ -252,12 +258,13 @@ body {
         margin: 0;
          } 
   .nav__list {
+  	top:-6rem;
   	float: right;
-  text-align: right;
- left: 65vw;
-  position: absolute;
+  	text-align: right;
+ 	left: 60vw;
+  	position: absolute;
  /*padding: auto 30px;*/
-  width: 22vw;
+  width: 24vw;
   }
   .nav__btn {
     position: relative;
