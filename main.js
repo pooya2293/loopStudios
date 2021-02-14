@@ -9,7 +9,6 @@ document.querySelector('.nav__btn').addEventListener('click', () => {
     };
 })
 
-
     
 
 // if (screen.width <= 900){

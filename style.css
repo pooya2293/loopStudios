@@ -58,8 +58,8 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 15rem) [col-end]) [center-end] minmax(3rem, 1fr) [full-end];
-  grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 15rem) [col-end]) [center-end] minmax(3rem, 1fr) [full-end];
+  /*grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(8, [col-start] minmax(-webkit-min-content, 15rem) [col-end]) [center-end] minmax(3rem, 1fr) [full-end];*/
+  grid-template-columns: [full-start] minmax(3rem, 1fr) [center-start] repeat(9, [col-start] minmax(min-content, 15rem) [col-end]) [center-end] minmax(3rem, 1fr) [full-end];
   grid-template-rows: 10rem 70vh repeat(4, -webkit-min-content);
   grid-template-rows: 10rem 70vh repeat(4, min-content); }
   @media only screen and (max-width: 39.375em) {
@@ -137,14 +137,14 @@ body {
 }
 
     .hero__content {
-    	width: 90vw;
+    	width: 91vw;
       /*width: -webkit-min-content;*/
       /*width: -moz-min-content;*/
       /*width: min-content; */
       } }
   @media only screen and (max-width: 39.375em) {
     .hero__content {
-      width: 87vw; } }
+      width: 89vw; } }
   @media only screen and (max-width: 26.875em) {
     .hero__content {
       padding: 2.8rem 2rem; 
@@ -154,12 +154,17 @@ body {
     .hero__content {
       padding: 1.8rem 2rem; } }
 
+
+/*relate to main.js*/
+
 .hero-active {
-  background-image: linear-gradient(#000, #000); }
+  background-image: linear-gradient(#0e38bd, #0e38bd); 
+
+}
 
 .hero-content {
   overflow: hidden;
-  opacity: 0; }
+  opacity:0; }
 
 /* ----------------------------------------
 # logo
