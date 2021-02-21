@@ -41,11 +41,11 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; 
+  box-sizing: inherit !important; 
 }
 
 html {
-  box-sizing: border-box;
+  box-sizing: border-box !important;
   font-size: 62.5%; }
 
 body {
@@ -355,4 +355,73 @@ body {
   .nav__checkbox:checked ~ .nav__nav {
     opacity: 1;
     visibility: visible; } }
+
+/* ----------------------------------------
+# Home
+-----------------------------------------*/
+.section-information {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.section-information__box-img {
+  grid-column: center-start / col-end 5;
+  grid-row: 3 / span 1;
+  padding-top: 16rem;
+}
+
+.section-information__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -o-object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
+.section-information__text {
+  grid-column: col-end 4 / center-end;
+  grid-row: 3 /span 1;
+  background-color: #fff;
+  z-index: 10;
+  transform: translateY(70%);
+  margin-top:5em; 
+  padding: 8rem;
+  width:102%;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+@media only screen and (max-width: 63.75em){
+    .section-information__box-img{
+      height: 100%;
+      grid-column: center-start / center-end;
+    }
+    .section-information__text {
+    grid-column: center-start / center-end;
+    transform: translateY(0);
+    grid-row: 4 / span 1;
+    width:100%;
+}
+
+@media only screen and (max-width: 45em){
+  .section-information__box-img{
+    padding-top: 10rem;
+  }
+}
+
+@media only screen and (max-width: 49.375em) {
+
+  .section-information__text {
+    padding: 8rem 3rem;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 39.375em) {
+  .section-information__text {
+    padding: 5rem 3rem 8rem 3rem;
+    text-align: center;} }
 

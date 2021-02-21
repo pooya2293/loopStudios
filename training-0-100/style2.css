@@ -1,0 +1,165 @@
+
+.jumbotron {
+	background-image: url("../images/desktop/image-hero.jpg");
+	direction: rtl;
+	background-size: cover;
+	height: 29rem;
+	display: grid;
+	grid-template-columns:  3fr  1fr ;
+	grid-template-rows:  1fr 3fr;
+	align-items: start;
+	background-position: center; 
+} 
+
+
+/*navbar*/
+
+.logo{
+	align-self: start;
+}
+
+.navbar {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.navbar-toggler {
+	border: none;
+
+}
+
+.collapse li, 
+.collapse a ,
+.collapse {
+	/*list-style-type: none;*/
+	color: #fff !important;
+	/*text-decoration: none;*/
+	/*display: inline;*/
+	grid-column: 2;
+	grid-row: 2;
+
+}
+
+@media only screen and (max-width: 767px) {
+
+
+.collapse li, 
+.collapse a ,
+.collapse {
+	float: right;
+	margin-right: -3px;
+	padding-top: 8px;
+
+}
+
+
+}
+
+.navbar-nav {
+	margin-right: -40px;
+}
+
+.info__hero {
+	display: grid;
+	margin-top: 100px;
+	grid-template-columns: 3.8fr 1fr 0.8fr;
+	grid-template-rows: 1fr 1fr;
+
+
+}
+
+.info__hero img {
+
+	position: absolute;
+	height: 360px;
+	margin-left: 20%;
+	border-radius: 10px;
+}
+
+.info-text {
+	direction: rtl;
+	background: linear-gradient(0deg, rgba(181,85,192,1) 0%, rgba(245,175,248,1) 100%, rgba(245,175,248,1) 100%);
+	font-family: "yekan";
+	color: #fff;
+	border-radius: 8px;
+	width: 420px;
+	margin-top: 85px;
+	grid-column: 2;
+	z-index: 1;
+
+}
+
+.info-text p ,
+.info-text h1 {
+
+	text-align: center;
+	padding: 15px 18px;
+
+}
+
+
+.info-text p {
+	font-size: 19.5px;
+}
+
+.info-text h1 {
+		font-weight: bolder;
+		padding: 15px 70px 0 70px;
+}
+
+
+@media only screen and (max-width: 1250px){
+	.info__hero {
+	margin-top: 100px;
+	grid-template-columns: 10px 1fr 10px;
+	grid-template-rows: 1fr 1fr;
+
+
+}
+	.info__hero img {
+		position: relative;
+		grid-column: 2;
+		justify-self: center;
+		margin-left: 0;
+	}
+	.info-text {
+		grid-row:2;
+		margin-top: 40px;
+		justify-self: center;
+
+	}
+
+
+
+
+}
+
+
+
+.info__btn {
+	display: grid;
+	grid-template-columns: 3fr 2fr 1.2fr;
+	grid-template-rows: 70px 70px 50px;
+	direction: rtl;
+}	
+
+.info__btn h1 , button {
+	grid-row: 3;
+	font-family: "yekan";
+	font-weight: bolder;
+
+}
+
+.info__btn button {
+	grid-column: 3;
+	border-radius: 12px;
+	background: #a65b9e;
+	border: 0;
+}
+
+.info__btn h1 {
+ grid-column: 1;
+ text-align-last: right;
+ text-align: right;
+}
+
