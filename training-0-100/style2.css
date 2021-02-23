@@ -328,8 +328,7 @@ template {
 
 
 .jumbotron {
-	box-sizing: border-box;
-	width: 100%;
+
 	background-image: url("../images/desktop/image-hero.jpg");
 	direction: rtl;
 	background-size: cover;
@@ -545,8 +544,6 @@ template {
 	
 
 	.jumbotron {
-	box-sizing: border-box;
-	width: 100%;
 	background-image: url("../images/desktop/image-hero.jpg");
 	direction: rtl;
 	background-size: cover;
