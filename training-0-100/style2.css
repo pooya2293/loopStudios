@@ -322,10 +322,8 @@ template {
 [hidden] {
   display: none !important;
 }
+
 /*# sourceMappingURL=bootstrap-reboot.css.map */
-
-
-
 
 .jumbotron {
 
@@ -345,6 +343,7 @@ template {
 
 .logo{
 	align-self: start;
+	justify-self: end;
 }
 
 .navbar {
@@ -359,28 +358,9 @@ template {
 .collapse li, 
 .collapse a ,
 .collapse {
-	/*list-style-type: none;*/
 	color: #fff !important;
-	/*text-decoration: none;*/
-	/*display: inline;*/
 	grid-column: 2;
 	grid-row: 2;
-
-}
-
-@media only screen and (max-width: 767px) {
-
-
-.collapse li, 
-.collapse a ,
-.collapse {
-	float: right;
-	margin-right: -3px;
-	padding-top: 8px;
-
-}
-
-
 }
 
 .navbar-nav {
@@ -433,13 +413,43 @@ template {
 		padding: 15px 70px 0 70px;
 }
 
+.info__btn {
+	display: grid;
+	grid-template-columns: 3fr 2fr 1.2fr;
+	grid-template-rows: 1px 1px 50px;
+	direction: rtl;
+	margin-top: -200px;
+	
+}	
+
+.info__btn h1 , button {
+	grid-row: 3;
+	font-family: "yekan";
+	font-weight: bolder;
+}
+
+.info__btn button {
+	grid-column: 3;
+	border-radius: 12px;
+	background: #a65b9e;
+	border: 0;
+	margin-left: 17px;
+}
+
+.info__btn h1 {
+ grid-column: 1;
+ text-align-last: right;
+ text-align: right;
+ margin-right: 17px;
+
+}
 
 @media only screen and (max-width: 1250px){
 	.info__hero {
 	margin-top: 100px;
 	grid-template-columns: 10px 1fr 10px;
 	grid-template-rows: 1fr 1fr;
-}
+	}
 	.info__hero img {
 		position: relative;
 		grid-column: 2;
@@ -455,41 +465,23 @@ template {
 
 	.info__btn {
 	margin-top: 60px !important;
-}	
-
+	}	
 }
 
+@media only screen and (max-width: 767px) {
 
 
-.info__btn {
-	display: grid;
-	grid-template-columns: 3fr 2fr 1.2fr;
-	grid-template-rows: 1px 1px 50px;
-	direction: rtl;
-	margin-top: -300px;
-	align-items: center;
-}	
+	.collapse li, 
+	.collapse a ,
+	.collapse {
+		float: right;
+		margin-right: -3px;
+		padding-top: 8px;
 
-.info__btn h1 , button {
-	grid-row: 3;
-	font-family: "yekan";
-	font-weight: bolder;
+	}
 }
 
-.info__btn button {
-	grid-column: 3;
-	border-radius: 12px;
-	background: #a65b9e;
-	border: 0;
-}
-
-.info__btn h1 {
- grid-column: 1;
- text-align-last: right;
- text-align: right;
-}
-
-@media only screen and (max-width: 576px){
+@media only screen and (min-width: 306px) and (max-width: 576px){
 	.info__hero {
 	grid-template-columns:  1fr ;
 	grid-column: 1;
@@ -504,89 +496,29 @@ template {
 		grid-column: 1;
 		margin-top: 40px;
 		justify-self: center !important;
-		width: 90%;
-
+		width: 100%;
+		height: 290px;
+	}
+	.info__btn {
+		align-items: center;
+	}
+	.info__btn h1{
+		font-size: 150%;
 	}
 }
-
-@media only screen and (max-width: 436px){
-
-	.info__hero img {
-		/*width: 300px;*/
-		position: relative;
-		grid-column: 1;
-	}
-	
-	.info__btn h1 {
-		font-size: 1.8em;
-
-	}
-
-	.jumbotron {
-	justify-content: end ;
-
-
-} 
 
 .info-text p {
 		font-size: 18px;
 
 	}
 .info-text h1 {
-		font-size: 28px;
+		font-size: 26px;
 		padding: 5px;
-
 	}
 }
 
-@media only screen and (max-width: 331px){
-
-	
-
-	.jumbotron {
-	background-image: url("../images/desktop/image-hero.jpg");
-	direction: rtl;
-	background-size: cover;
-	height: 18rem;
-	display: grid;
-	grid-template-columns: 1fr  1fr ;
-	grid-template-rows:  1fr 3fr;
-	align-items: start;
-	background-position: center; 
-} 
-
-
-	.info__hero img {
-		/*width: 200px;*/
-		position: relative;
-		grid-column: 1;
-	}
-	
-	.info__btn h1 {
-		font-size: 1.8em;
-
-	}
-
-	.jumbotron {
-	justify-content: end ;
-
-
-} 
-
-.info-text p {
-		font-size: 18px;
-
-	}
-.info-text h1 {
-		font-size: 28px;
-		padding: 5px;
-
-	}
-}
 
 @media only screen and (max-width: 305px){
-
-	
 
 	.jumbotron {
 	grid-template-columns: minmax(10px,0.8fr) minmax(5px,1fr) ;
@@ -596,8 +528,11 @@ template {
 } 
 
 	.logo img {
-		height: 21px;
+		height: 20px;
 	}
 
-	
+	.info__btn h1 {
+		font-size: 10px;
+	}	
 }
+
