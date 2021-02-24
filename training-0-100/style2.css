@@ -456,6 +456,18 @@ template {
 
 }
 
+.post-box{
+	display: grid;
+	grid-template-columns:repeat(4,1fr);
+	grid-template-rows:1fr 1fr;
+	grid-gap: 20px 6px;
+	margin: 0 8px;
+}
+
+.item5,.item6,.item7,.item8 {
+	grid-row: 2;
+}
+
 @media only screen and (max-width: 1250px){
 	.info__hero {
 	margin-top: 100px;
@@ -479,6 +491,11 @@ template {
 	.info__btn {
 	margin-top: 60px !important;
 	}	
+
+	.box {
+
+	}
+
 }
 
 @media only screen and (max-width: 767px) {
