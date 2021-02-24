@@ -444,14 +444,15 @@ template {
 	border-radius: 12px;
 	background: #a65b9e;
 	border: 0;
-	margin-left: 17px;
+	margin-left: 60px;
+	font-size:20px;
 }
 
 .info__btn h1 {
  grid-column: 1;
  text-align-last: right;
  text-align: right;
- margin-right: 17px;
+ margin-right: 60px;
 
 }
 
@@ -495,9 +496,18 @@ template {
 	.info-text {
 		height: 220px;
 	}
+
+	.info__btn button {
+		margin-left: 20px;
+	}
+
+	.info__btn h1 {
+		font-size:32px;
+		margin-right: 20px;
+	}
 }
 
-@media only screen and  (max-width: 546px){
+@media only screen and  (max-width: 420px){
 	.info__hero {
 	grid-template-columns:  1fr ;
 	grid-column: 1;
@@ -513,7 +523,7 @@ template {
 		margin-top: 40px;
 		justify-self: center !important;
 		width: 100%;
-		height: 230px;
+		height: 299px;
 	}
 	.info__btn {
 		align-items: center;
@@ -547,6 +557,10 @@ template {
 	.info__btn h1 {
 		font-size: 21px;
 	}	
+
+	.info__btn button {
+	font-size:16px;
+	}
 }
 
 @media only screen and (max-width: 310px){
@@ -557,4 +571,9 @@ template {
 	.info__btn h1 {
 		font-size: 18px;
 	}
+
+	.info__btn button {
+	font-size:14px;
+	}
 }
+
