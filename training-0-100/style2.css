@@ -564,6 +564,56 @@ background-image: linear-gradient(to bottom, transparent 0%, transparent 40%, rg
 
 }
 
+/*-----FOOTER-----*/
+
+.blockquote-footer {
+
+	background: #383434;
+	height: 200px;
+	margin-top: 100px;
+
+}
+
+ul {
+	display: inline;
+	width:90%;
+}
+
+.li__footer li{
+	display: inline;	
+	float: left;
+	margin-top: 60px;
+	padding: 5px 8px;
+	cursor: pointer;
+	margin-left: 12px;
+	transition: all .4s;
+	font-size: 18px;
+}
+
+.li__footer li:hover{
+	color: #fff;
+	border-bottom: 0.4px solid ;
+	font-size: 16px; 
+}
+
+.social__icons li {
+	display:inline;
+	font-size: 28px;
+	margin-top: 50px;
+	padding: 0 12px;
+	margin-right: 12px;
+	float: right;
+	cursor: pointer;
+
+}
+
+.fa:hover {
+	color: #fff;
+	font-size: 35px; 
+	transition: all 1s;
+}
+
+
 @media only screen and (max-width: 1250px){
 	.info__hero {
 	margin-top: 100px;
@@ -671,6 +721,35 @@ background-image: linear-gradient(to bottom, transparent 0%, transparent 40%, rg
 		grid-row: 8;
 		background-position:0% 3%;
 	}
+
+	/*-----FOOTER-----*/
+	.blockquote-footer {
+
+	height: 200px;
+
+	}
+	ul {
+	display: flex;
+	justify-content: center;
+	width: 90%;
+	}
+
+	.li__footer li{
+		display: flex;
+		padding: 5px 8px;
+		cursor: pointer;
+		margin:20px 12px;
+		transition: all .4s;
+		font-size: 18px;
+	}
+	.social__icons li {
+		display: flex;
+		font-size: 28px;
+		padding: 0 12px;
+		margin:20px 14px;
+		cursor: pointer;
+
+	}
 }
 
 @media only screen and  (max-width: 420px){
@@ -742,6 +821,17 @@ background-image: linear-gradient(to bottom, transparent 0%, transparent 40%, rg
 
 	.info__btn button {
 	font-size:14px;
+	}
+	/*FOOTER*/
+
+	.li__footer li{
+		margin:20px 2px;
+		font-size: 14px;
+	}
+	.social__icons li {
+		font-size: 20px;
+		margin:20px 3px;
+
 	}
 }
 
