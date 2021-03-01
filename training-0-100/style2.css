@@ -457,12 +457,12 @@ template {
 }
 
 .post-box {
-	width: 100%;
+	/*width: 95%;*/
 	display: grid;
 	grid-template-columns:repeat(4,1fr);
 	grid-template-rows:1fr 1fr;
-	grid-gap: 20px 10px;
-	padding:0px 50px 0px 10px;
+	grid-gap: 20px 15px;
+	padding:0 60px;
 	justify-content: center;
 
 }
@@ -619,13 +619,13 @@ background-image: linear-gradient(to bottom, transparent 0%, transparent 40%, rg
 		margin-right: 20px;
 	}
 
-		.post-box{
+	.post-box{
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(8,200px);
 	grid-gap: 20px 6px;
 	box-sizing: border-box;
-	padding: 0 1px 0 1px;
+	padding:0 0;
 	}
 	
 
