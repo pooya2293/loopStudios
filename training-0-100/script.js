@@ -114,3 +114,4 @@ tipButtons.forEach(button => {
 		}
 	};
 });
+
